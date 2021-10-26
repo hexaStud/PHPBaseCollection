@@ -1,9 +1,6 @@
 {
   "name": "BaseCollection",
   "version": "1.0.0",
-  "files": [
-    "HexaStudio"
-  ],
   "git": {
     "repo": "https://github.com/hexaStud/PHPBaseCollection"
   },
