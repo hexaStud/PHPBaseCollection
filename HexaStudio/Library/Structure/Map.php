@@ -16,12 +16,13 @@ class Map
         $this->arr[$key] = $value;
     }
 
-    public function get(string $key):mixed
+    public function get(string $key): mixed
     {
         return $this->arr[$key];
     }
-    
-    public function tryGet(string $key, $default):mixed {
+
+    public function tryGet(string $key, $default): mixed
+    {
         if (array_key_exists($key, $this->arr)) {
             return $this->arr[$key];
         } else {
@@ -29,7 +30,13 @@ class Map
         }
     }
 
-    public function has(string $key): bool {
+    public function has(string $key): bool
+    {
         return array_key_exists($key, $this->arr);
+    }
+
+    public function keys(): array
+    {
+        return array_keys($this->arr);
     }
 }
